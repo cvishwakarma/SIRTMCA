@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mehroon"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vnetsoft.sirtmca.view.SignupSIRTMCA" >
+    
+    <LinearLayout
+        android:id="@+id/llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+      <ImageView
+            android:id="@+id/sgi_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sirt_logo" />
+
+      <TextView
+            android:id="@+id/nameTv"
+            style="@style/tv_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nameTv" />
+
+      <EditText
+            android:id="@+id/input_nameEd"
+            style="@style/edittext_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_person_black_36dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_person_black_36dp"
+            android:hint="@string/namehintEd"
+            android:inputType="textPersonName" />
+
+      <TextView
+            android:id="@+id/emailTv"
+            style="@style/tv_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emailTv" />
+
+      <EditText
+            android:id="@+id/input_emailEd"
+            style="@style/edittext_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_action_email"
+            android:hint="@string/emailhintEd"
+            android:inputType="textEmailAddress" >
+      </EditText>
+
+       <TextView
+            android:id="@+id/passwordTv"
+            style="@style/tv_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passwordTv" />
+
+        <EditText
+            android:id="@+id/input_passwordEd"
+            style="@style/edittext_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_private"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_private"
+            android:hint="@string/passwordhintEd"
+            android:inputType="textPassword" />
+
+         <TextView
+            android:id="@+id/confirmPassTv"
+            style="@style/tv_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmPasswordTv" />
+
+         <EditText
+            android:id="@+id/input_confirmPassEd"
+            style="@style/edittext_sirtmca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_private"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_private"
+            android:hint="@string/confirmPasswordhintEd"
+            android:inputType="textPassword" />
+
+
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            style="@style/btn_sirtmca"
+            android:text="@string/signUpBtn"/>
+
+        <TextView
+            android:id="@+id/link_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/loginLink"
+            android:textColor="@color/dark_red"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

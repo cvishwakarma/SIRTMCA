@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mehroon"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vnetsoft.sirtmca.view.StudentUpdate" >
+
+     <LinearLayout
+        android:id="@+id/llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+     <TextView
+		android:id="@+id/create_title_space"
+		android:layout_width="match_parent"
+		android:layout_height="3dp"
+		android:background="@color/dark_red"
+		android:textColor="@color/black" />
+		    
+    <TextView
+		android:id="@+id/update_student_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/orange_logo"
+		android:gravity="center"
+		android:padding="5sp"
+		android:text="@string/update_student"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textStyle="bold" />
+
+	  <TextView
+		    android:id="@+id/create_title_space2"
+		    android:layout_width="match_parent"
+		    android:layout_height="3dp"
+		    android:layout_marginBottom="10sp"
+		    android:background="@color/dark_red"
+		    android:textColor="@color/black" />      
+        
+     </LinearLayout>
+     
+    <ScrollView
+        android:id="@+id/scrlview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/llyt"
+        android:fillViewport="true"
+        android:padding="10dp" >
+    	          
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true"
+			    android:orientation="vertical"
+			    tools:context=".StudentUpdate" >
+			    
+			   <TextView
+			        android:id="@+id/update_lblRollnum"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:text="@string/rollnumber_label"
+			        android:textColor="@color/black"
+			        android:textSize="16sp" />
+
+			    <EditText
+			        android:id="@+id/update_etRollnum"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:background="@drawable/textborder"
+			        android:ems="10"
+			        android:padding="5sp"
+			        android:hint="@string/rollnumber"
+			        android:inputType="textShortMessage" />
+
+			    <TextView
+			        android:id="@+id/update_lblName"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:text="@string/name_label"
+			        android:textColor="@color/black"
+			        android:textSize="16sp" />
+
+			    <EditText
+			        android:id="@+id/update_etName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="5sp"
+			        android:layout_margin="3sp"
+			        android:background="@drawable/textborder"
+			        android:ems="10"
+			        android:hint="@string/name"
+			        android:inputType="textPersonName" />
+
+
+
+			    <TextView
+			        android:id="@+id/update_lblFatherName"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:text="@string/fathername_label"
+			        android:textColor="@color/black"
+			        android:textSize="16sp" />
+
+			    <EditText
+			        android:id="@+id/update_etFatherName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:background="@drawable/textborder"
+			        android:ems="10"
+			        android:padding="5sp"
+			        android:hint="@string/fathername"
+			        android:inputType="textPersonName" />
+			    
+
+			    <TextView
+			        android:id="@+id/update_lblPhone"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:text="@string/phone_label"
+			        android:textColor="@color/black"
+			        android:textSize="16sp" />
+
+			    <EditText
+			        android:id="@+id/update_etPhone"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:background="@drawable/textborder"
+			        android:ems="10"
+			        android:padding="5sp"
+			        android:hint="@string/phone"
+			        android:inputType="phone" />
+
+			    <TextView
+			        android:id="@+id/update_lblEmail"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:text="@string/email_label"
+			        android:textColor="@color/black"
+			        android:textSize="16sp" />
+
+			    <EditText
+			        android:id="@+id/update_etEmail"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="3sp"
+			        android:background="@drawable/textborder"
+			        android:ems="10"
+			        android:padding="5sp"
+			        android:hint="@string/email"
+			        android:inputType="textWebEmailAddress" />
+
+			    <Button
+			        android:id="@+id/update_btnSave"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="22sp"
+		            android:layout_marginLeft="5sp"
+		            android:layout_marginRight="5sp"
+		            android:layout_marginBottom="10sp"
+			        android:background="@color/dark_red"
+			        android:drawableLeft="@android:drawable/ic_menu_save"
+			        android:drawableStart="@android:drawable/ic_menu_save"
+			        android:gravity="center"
+			        android:text="@string/save"
+			        android:textColor="@color/white"
+			        android:textStyle="bold" />
+			</LinearLayout>
+        
+</ScrollView>
+
+</RelativeLayout>
